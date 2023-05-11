@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cal.css">
+    <script src="https://kit.fontawesome.com/02a7b05ba2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="num bg-dark mt-4">
+        <h1 class=" text-center" style="color: aliceblue;">Calculator</h1>
+        <div class="container">
+            <input type="text" id="result" class="form-control">
+        </div>
+        <div class=" container w-100" style="border-color: black;">
+            <div class="text-center p-1 mt-3 " style="padding: 10px; ">
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                    style="height: 50px; width: 50px; color: orange; font-size: large;" onclick="allclear()">AC</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                    style="height: 50px; width: 50px; color: orange; font-size: large;" onclick="backsplace()">&#9003
+                </button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                    style="height: 50px; width: 50px; color: orange; font-size: large;"
+                    onclick="displayData('/')">/</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                    style="height: 50px; width: 50px; color: orange; font-size: large;"
+                    onclick="displayData('*')">*</button>
+            </div>
+            <div class="text-center p-1 mt-3 " style="padding: 10px">
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(7)">7</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(8)">8</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(9)">9</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: orange; font-size: large;"
+                    onclick="displayData('-')">-</button>
+            </div>
+            <div class="text-center p-1 mt-3 " style="padding: 10px">
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(4)">4</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(5)">5</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(6)">6</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: orange; font-size: large;"
+                    onclick="displayData('+')">+</button>
+            </div>
+            <div class="text-center p-1 mt-3 " style="padding: 10px">
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(1)">1</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(2)">2</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData(3)">3</button>
+                <button type="button" class="rounded-4 p-2 btn btn-outline-light"
+                style="height: 100px; width: 50px; color: rgb(240, 107, 189); background-color: orange; font-size: large;"
+                    onclick="evaluateOper()">=</button>
+            </div>
+            <!-- <hr style="width: 250px; margin-left: 20px;"> -->
+            <div class="text-center p-1 mt-3 " style="padding: 10px">
+                <button type="button" class="rounded-4 p-2 btn btn-outline-light"
+                style="height: 50px; width: 100px; color: rgb(240, 107, 189); font-size: large; margin-left: -45px;" onclick="displayData(0)">0</button>
+                <button type="button" class="rounded-circle p-2 btn btn-outline-light"
+                style="height: 50px; width: 50px; color: rgb(240, 107, 189); font-size: large;"
+                    onclick="displayData('.')">. </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./cal.js"></script>
+</html>    
