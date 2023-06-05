@@ -1,8 +1,34 @@
 @media (min-width:800px){
     .num{
+        margin-top: 20%;
         width: 25%;
         margin-left: 40%;
-        font-size: xx-large
-
+        font-size: 50%;
+    }
+    .btnequal{
+        height: 132px; 
+        width: 14%; 
+        margin-left: 66%; 
+        margin-top: -30%;
     }
 }
+.num{
+    /* background: linear-gradient(#8b9da9, #ddc9a3); */
+    background: linear-gradient(135deg, #3a3a3a, #000000);
+    margin-top: 10%;
+    color: #111;
+}
+.btn:hover{
+    background-color: rgb(76, 76, 76);
+}
+#result{
+    color: white;
+    background-color: transparent;
+    border:white;
+    width: 75%;
+    margin-left: 10%;
+}
+#result:hover{
+    border-color: white;
+}
+
